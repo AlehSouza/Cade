@@ -1,0 +1,230 @@
+/* Essentials */
+
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+* {
+    outline: none;
+    font-family: 'VT323', monospace;
+    -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    background-image: url('../src/bg.jpg');
+    background-size: cover;
+    overflow: hidden;
+}
+
+.btnVoltar{
+    position: absolute;
+    padding: 12px;
+    margin: 1%;
+    background-color: white;
+    border: 2px solid #E2E2E2;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.btnVoltar:active{
+    position: absolute;
+    margin-top: 1.1%;
+}
+/* /////////////////////////////// */
+
+#container{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+#gameContainer{
+    width: 1000px;
+    height: 700px;
+    min-width: 1000px;
+    min-height: 700px;
+    max-width: 1000px;
+    max-height: 700px;
+    background-color: black;
+    overflow: hidden;
+}
+
+#menuInicial{
+    height: 100%;
+    color: white;
+    transition: 1s;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    /* display: none; */
+}
+#menuInicial button{
+    width: 200px;
+    padding: 15px;
+    font-size: 25px;
+    background-color: transparent;
+    border: 5px solid white;
+    color: white;
+    cursor: pointer;
+}
+#menuInicial button:hover{
+    transform: scale(1.1);
+}
+
+/* Game */
+
+#game{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+#gratientScreen{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.500);
+}
+
+#placeCreatures{
+    width: 100%;
+    height: 70%;
+    background-image: url('../src/bg_fase1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#placeCreatures button{
+    width: 50px;
+    height: 50px;
+}
+
+.tipsAndAliens button{
+    border: 2px solid black;
+}
+.tipsAndAliens button img{
+    width: 50px;
+}
+
+
+#containerDialogBox{
+    position: relative;
+    width: 100%;
+    height: 30%;
+    background-color: #f5cc12;
+    z-index: 9999;
+    animation: smoothTransition 3s;
+}
+
+@keyframes smoothTransition{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;        
+    }
+}
+
+.astroPersona{
+    position: absolute;
+    margin-top: -310px;
+    width: 500px;
+    margin-left: -400px;
+}
+#dialogPlaceholder{
+    width: 77%;
+    height: 100%;
+    margin-left: 20%;
+    padding-top: 0px;
+    padding: 0px 50px;
+    font-size: 28px;
+    transition: 2s;
+    display: flex;
+}
+#dialogPlaceholder p button{
+    margin-left: 15px;
+    width: 80px;
+    padding: 8px;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    font-size: 15px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+#dialogItems{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding-top: 0px;
+    padding: 0px 0px;
+    font-size: 28px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-top: 3px solid black;
+    background-color: teal;
+    /* display: flex; */
+    display: none;
+}
+#dialogItems button{
+    width: 80px;
+    height: 80px;
+}
+
+/* Posicionamento dos botões */
+
+#one_alien{
+    position: absolute;
+    margin-top: 329px;
+    margin-left: 14px;
+}
+#two_alien{
+    position: absolute;
+    margin-top: 125px;
+    margin-left: 225px;
+}
+#tree_alien{
+    position: absolute;
+    margin-top: 402px;
+    margin-left: 223px;
+}
+#four_alien{
+    position: absolute;
+    margin-top: 408px;
+    margin-left: 630px;
+}
+#five_alien{
+    position: absolute;
+    margin-top: 183px;
+    margin-left: 662px;
+}
+#six_alien{
+    position: absolute;
+    margin-top: 218px;
+    margin-left: 945px;
+}
+#seven_alien{
+    position: absolute;
+    margin-top: 408px;
+    margin-left: 880px;
+}
+
+.buttonsAnswer{
+    background-color: transparent;
+    border-radius: 50px;
+    border: 0px;
+}
+
+
+@media screen and (max-width: 1080px){
+    #gameContainer{
+        background-color: black;
+    }
+}
