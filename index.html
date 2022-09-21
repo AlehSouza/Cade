@@ -4,38 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Find the peoples</title>
+    <title>Cadê?</title>
+    <link rel="shortcut icon" href="src/icon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style/style.css">
     <script src="script/script.js"></script>
 </head>
 <body>
-    <a class="btnVoltar" href="/ChronnoGame/index.html"> Voltar </a>
     <div id="container">
         <div id="gameContainer">
-            
             <div id="menuInicial">
-                <img src="src/lupa.png" >
+                <img src="src/icon/favicon.ico" alt="">
+                <h1>Cadê?</h1>
                 <button onclick="startGame()">Jogar</button>
-                <br>
-                <button>Como jogar</button>
-                <br>
-                <button>Créditos</button>
             </div>
-
             <div id="game">
                 <div id="placeCreatures">
                     <div id="gratientScreen">
-                        <button id="one_alien"   class="buttonsAnswer"   onclick="hide_point('one_alien')"></button>
-                        <button id="two_alien"   class="buttonsAnswer"   onclick="hide_point('two_alien')"></button>
-                        <button id="tree_alien"  class="buttonsAnswer"   onclick="hide_point('tree_alien')"></button>
-                        <button id="four_alien"  class="buttonsAnswer"   onclick="hide_point('four_alien')"></button>
-                        <button id="five_alien"  class="buttonsAnswer"   onclick="hide_point('five_alien')"></button>
-                        <button id="six_alien"   class="buttonsAnswer"   onclick="hide_point('six_alien')"></button>
-                        <button id="seven_alien" class="buttonsAnswer"   onclick="hide_point('seven_alien')"></button>
+                        <button id="one_alien" class="buttonsAnswer" onclick="hide_point('one_alien')"></button>
+                        <button id="two_alien" class="buttonsAnswer" onclick="hide_point('two_alien')"></button>
+                        <button id="three_alien" class="buttonsAnswer" onclick="hide_point('three_alien')"></button>
+                        <button id="four_alien" class="buttonsAnswer" onclick="hide_point('four_alien')"></button>
+                        <button id="five_alien" class="buttonsAnswer" onclick="hide_point('five_alien')"></button>
+                        <button id="six_alien" class="buttonsAnswer" onclick="hide_point('six_alien')"></button>
+                        <button id="seven_alien" class="buttonsAnswer" onclick="hide_point('seven_alien')"></button>
                     </div>
                 </div>
                 <div id="containerDialogBox">
-                    
                     <div id="dialogPlaceholder">
                         <img class="astroPersona" src="src/astronaut.png"> 
                         <p>
@@ -55,38 +49,44 @@
                         <div class="tipsAndAliens">
 
                             <button class="one_alien">
-                                <img src="./src/alien_um.png" width="50px">
+                                <img src="./src/alien_1.png" width="50px">
                             </button>
 
                             <button class="two_alien">
-                                <img src="./src/alien_dois.png" width="50px">
+                                <img src="./src/alien_2.png" width="50px">
                             </button>
 
-                            <button class="tree_alien">
-                                <img src="./src/alien_tres.jpg" width="50px">
+                            <button class="three_alien">
+                                <img src="./src/alien_3.jpg" width="50px">
                             </button>
 
                             <button class="four_alien">
-                                <img src="./src/alien_quatro.png" width="50px">
+                                <img src="./src/alien_4.png" width="50px">
                             </button>
 
                             <button class="five_alien">
-                                <img src="./src/alien_cinco.png" width="50px">
+                                <img src="./src/alien_5.png" width="50px">
                             </button>
 
                             <button class="six_alien">
-                                <img src="./src/alien_seis.jpg" width="50px">
+                                <img src="./src/alien_6.jpg" width="50px">
                             </button>
 
                             <button class="seven_alien">
-                                <img src="./src/alien_sete.jpg" width="50px">
+                                <img src="./src/alien_7.jpg" width="50px">
                             </button>
 
                         </div>
                     </div>
                 </div>
+                <div id="winner">
+                    <div class="winner-info">
+                        <h1>Parabéns, você ganhou</h1>
+                        <img src="src/gif/winner.gif" alt="" width="100%">
+                        <button onclick="window.location.reload()">Jogar novamente</button>
+                    </div>
+                </div>
             </div>
-
         </div>
     </div>
 </body>
